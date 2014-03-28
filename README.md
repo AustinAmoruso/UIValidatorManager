@@ -6,3 +6,9 @@ Please create your own uihelper flashcell and stopflashcell methods. I have left
 Useage
 ==================
 [self.puvm createValidator:self.pName flash:self.pNameCell rule:^{return (bool)(self.pName.text.length > 3);}];
+
+-(BOOL)valid
+{
+    [self.puvm setEnableed:true];
+    return [self.puvm isValid];
+}
